@@ -4,12 +4,14 @@
 // Each ingredient should be logged on a new line
 // How can you fix it?
 
+// Printing the ingredients array directly won’t show each item on a new line.
+// Use join("\n") to display each ingredient on its own line.
+
+
 const recipe = {
   title: "bruschetta",
   serves: 2,
   ingredients: ["olive oil", "tomatoes", "salt", "pepper"],
 };
 
-console.log(`${recipe.title} serves ${recipe.serves}
-  ingredients:
-${recipe}`);
+console.log(`${recipe.title} serves ${recipe.serves}\ningredients:\n${recipe.ingredients.join("\n")}`);
